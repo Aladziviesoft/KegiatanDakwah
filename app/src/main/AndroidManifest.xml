@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aladziviesoft.data">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity android:name=".TambahPembayarActivity" />
+        <activity
+            android:name=".ListTaawunAcivity"
+            android:theme="@style/AppTheme.NoActionBar.Activity" />
+        <activity android:name=".UpdateTaawunActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".UpdateKegiatan" />
+        <activity android:name=".TambahKegiatan" />
+        <activity android:name=".KegiatanActivity" />
+        <activity android:name=".TambahInventoryActivity" />
+        <activity android:name=".UpdateInventoryActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditUserActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".WallpaperActivity" />
+        <activity android:name=".SaldoActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity
+            android:name=".RencanaAnggaranAcitivty"
+            android:theme="@style/AppTheme.NoActionBar.Activity" />
+        <activity
+            android:name=".TambahPengeluaranActivity"
+            android:theme="@style/AppTheme.NoActionBar.Activity" />
+        <activity android:name=".ListPengeluaranActivity" />
+        <activity android:name=".TambahRadActivity"></activity>
+    </application>
+
+</manifest>

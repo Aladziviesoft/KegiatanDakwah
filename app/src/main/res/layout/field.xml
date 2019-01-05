@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/namarab" />
+
+        <EditText
+            android:id="@+id/etNamaRencana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ketikkandisini"
+            android:inputType="textCapWords"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jumlahuang" />
+
+        <EditText
+            android:id="@+id/etNominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:hint="@string/nol"
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>
